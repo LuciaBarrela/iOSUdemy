@@ -1,8 +1,10 @@
-//This is a comment
 
 
-var numbers = [45, 73, 195, 53]
+func greeting() {
+    print("hello world")
+}
 
-var computedNumbers = numbers*
+
+
 
 
