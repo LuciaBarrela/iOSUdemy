@@ -1,8 +1,16 @@
 
 struct Town {
-    let name = "Tinytown"
-    var citizens = ["Lucia", "Miguel"]
-    var resources = ["Grain": 100, "Ore": 42, "Wool": 75] //dictionary
+    let name: String
+    var citizens: [String]
+    var resources: [String: Int]
+    
+    init(name: String, citizens: [String], resources: [String : Int]) {
+        
+        self.name = name
+        self.citizens = citizens
+        self.resources = resources
+       
+    }
     
     //if it's inside a struct or class.. it's a method
     //but if it's just hanging around at the end of the code it's a function
@@ -12,14 +20,11 @@ struct Town {
     }
 }
 
-var myTown = Town()
+var anotherTown = Town(name: "Island", citizens: ["Felix"], resources: ["Coconuts": 100])
+anotherTown.citizens.append("Wilson")
+print(anotherTown.citizens)
 
-print(myTown.citizens)
-print("\(myTown.name) has \(myTown.resources["Grain"]!) bags of grain.")
+var ghostTown = Town(name: "GhostTown", citizens: [], resources: ["Tumbleweed": 1])
 
-myTown.citizens.append("Keanu Reeves")
-print(myTown.citizens)
-
-
-
-
+anotherTown.citizens.append("Wilson")
+ghostTown.fortify()
