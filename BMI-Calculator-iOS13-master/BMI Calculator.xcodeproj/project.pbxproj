@@ -14,6 +14,7 @@
 		AD0B9F83230D61840065EFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F82230D61840065EFD9 /* Assets.xcassets */; };
 		AD0B9F86230D61840065EFD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0B9F84230D61840065EFD9 /* LaunchScreen.storyboard */; };
 		AD64359A2312D0BC00E22B00 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6435992312D0BC00E22B00 /* README.md */; };
+		B2464A332B5EB24E00A2E229 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2464A322B5EB24E00A2E229 /* BMI.swift */; };
 		B26F7C792B597EA80052C0D9 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F7C782B597EA80052C0D9 /* ResultViewController.swift */; };
 		B26F7C7B2B5988490052C0D9 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26F7C7A2B5988490052C0D9 /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
@@ -28,8 +29,9 @@
 		AD0B9F85230D61840065EFD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD0B9F87230D61840065EFD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6435992312D0BC00E22B00 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B2464A322B5EB24E00A2E229 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 		B26F7C782B597EA80052C0D9 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		B26F7C7A2B5988490052C0D9 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "BMI Calculator/Controllers/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
+		B26F7C7A2B5988490052C0D9 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculatorBrain.swift; path = "BMI Calculator/Models/CalculatorBrain.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 			children = (
 				AD0B9F79230D61800065EFD9 /* AppDelegate.swift */,
 				AD0B9F7B230D61800065EFD9 /* SceneDelegate.swift */,
-				AD0B9F8F230D63EA0065EFD9 /* Models */,
+				B2464A312B5EB23600A2E229 /* Models */,
 				AD0B9F8E230D63E10065EFD9 /* Views */,
 				AD0B9F8D230D63D70065EFD9 /* Controllers */,
 				AD0B9F82230D61840065EFD9 /* Assets.xcassets */,
@@ -92,10 +94,11 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		AD0B9F8F230D63EA0065EFD9 /* Models */ = {
+		B2464A312B5EB23600A2E229 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				B26F7C7A2B5988490052C0D9 /* CalculatorBrain.swift */,
+				B2464A322B5EB24E00A2E229 /* BMI.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				AD0B9F7A230D61800065EFD9 /* AppDelegate.swift in Sources */,
 				AD0B9F7C230D61800065EFD9 /* SceneDelegate.swift in Sources */,
 				B26F7C7B2B5988490052C0D9 /* CalculatorBrain.swift in Sources */,
+				B2464A332B5EB24E00A2E229 /* BMI.swift in Sources */,
 				B26F7C792B597EA80052C0D9 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
